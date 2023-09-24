@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    position:fixed;
+    /* background-color: red; */
+    width:100%;
+    height:90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    margin:3px;
+
+}
+.logo .logoicon{
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-right: 7px;
+}
+.logo a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.nav a{
+    position:relative;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:#fff;
+    text-decoration: none;
+    margin-left:12px;
+}
+.nav a::after{
+    content:' ';
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:100%;
+    height:3px;
+    background-color: #fff;
+    border-radius: 40px;
+    transform: scale(0);
+    transition: .5s;
+}
+.nav a:hover::after{
+    transform: scaleX(1);
+}
+
+/* MAIN SECTION STARTED HEAR */
+/* form section strted */
+
+.main-box{
+    width:100%;
+    height: 100vh;
+    background-image: url(4.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 70px 0px 90px ;
+}
+
+.full-login{
+    position: relative;
+    width:420px;
+    margin-right: 20px;
+}
+.full-login h2{
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+}
+.form .input-box{
+    width: 100%;
+    position:relative;
+    height: 50px;
+    margin-top: 40px;
+}
+.input-box .icon{
+    color:#fff;
+    position:absolute;
+    top:15px;
+    left:15px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: transparent;
+    border-radius: 40px;
+    color:#fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding:0px 40px;
+}
+.input-box label{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    left:45px;
+    top:50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    font-size: 0.8rem;
+    left:17px;
+    top:-14px;
+}
+.remember-forget{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9px;
+    margin-top: 5px;
+
+}
+.remember-forget label{
+    display: flex;
+    padding-left: 9px;
+}
+.remember-forget label p{
+    padding: 2px;
+    color:#fff;
+}
+.remember-forget a{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: .5s;
+
+}
+.remember-forget a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    outline:none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    background: linear-gradient(90deg,black,blue);
+    box-shadow: 0px 8px 10px rgb(0,0,220);
+}
+.resister{
+    color:#fff;
+    padding:0px 10px ;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.resister a{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: .5s;
+    padding-bottom: 2px;
+}
+.resister a:hover{
+    border-bottom: 3px solid white;
+}
+    
+
+.main-box .content{
+    color:white;
+    width:620px;
+    margin-left: 20px;
+}
+.content h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.content h1{
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+.content h3{
+padding-bottom: 25px;
+}
+.content .button{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border-radius: 40px;
+    padding:5px 15px;
+
+}
+.content .button:hover{
+    background: linear-gradient(90deg,black,blue);
+    color:#fff;
+}
+
+/* main section end */

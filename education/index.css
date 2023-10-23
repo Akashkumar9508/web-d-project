@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&family=Roboto&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #2b2923 0%, black 100%);
+}
+
+.nav-index {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to right, #2b2923 0%, black 100%);
+    display: flex;
+    box-shadow: #111;
+    align-items: center;
+    padding: 10px 60px;
+}
+.nav-logo {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid rgb(255, 255, 255);
+    border-top: 4px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.nav-logo span i {
+    font-size: 2.4rem;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.nav-logo h1 a {
+    text-decoration: none;
+    font-weight: 2.4rem;
+    color: #ffffff;
+}
+
+.navbar {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    width: 600px;
+    height: 50px;
+}
+
+.navbar ul {
+    width: 100%;
+}
+
+.navbar ul li {
+    display: inline;
+    text-align: center;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 32px;
+    width: 16%;
+
+    color: rgb(255, 255, 255);
+}
+
+hr {
+    height: 40px;
+    width: 20%;
+    background: linear-gradient(to right, #fff000 0%, #ff3399 100%);
+    margin: -30px 0px 0px 20px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+
+.two:hover~hr {
+    margin-left: 25%;
+}
+
+.three:hover~hr {
+    margin-left: 47%;
+}
+
+.four:hover~hr {
+    margin-left: 69%;
+}
+
+/* header section is end  */
+/* first pannel started */
+
+.first-pannel {
+    background: linear-gradient(to right, #575454 0%, #030303 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 70vh;
+    margin: 40px;
+    border-bottom-left-radius: 30px;
+}
+
+.first-pannel .text-area {
+    padding: 30px 20px;
+    height: 50vh;
+    width: 50vw;
+}
+
+.first-pannel .text-area h1 {
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 20px 20px 7px 40px;
+}
+
+.first-pannel .text-area h2 {
+    font-size: 1rem;
+    padding-left: 40px;
+    color: #eee3e3;
+}
+
+.first-pannel .text-area p {
+    max-width: 40vw;
+    color: #fff;
+    text-align: left;
+    padding: 20px 20px 0px 40px;
+}
+
+button {
+    padding: 15px 55px;
+    margin: 15px 0px 0px 30px;
+    border-radius: 40px;
+    border: 2px solid #fff;
+    font-size: 1.3rem;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.image {
+    background-image: url(/education/image/web.jpg);
+    height: 50vh;
+    width: 50vw;
+    background-size: cover;
+    background-position: center;
+    border-radius: 60px;
+}
+
+/* second pannel started */
+
+.main-first-section {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    height: 50vh;
+    margin: 50px;
+    width: 25%;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background: linear-gradient(to right, #464540 0%, rgb(55, 49, 49) 100%);
+    padding: 30px 10px 0px 30px;
+}
+
+.hero:hover {
+    box-shadow: 5px 10px 18px rgb(73, 64, 67);
+}
+
+.hero h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    width: 45%;
+    border-bottom: 2px solid #fff;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    padding-left: 10px;
+    color: #fff;
+    max-width: 90%;
+    padding-top: 10px;
+}
+
+.course-btn {
+    margin-left: 25%;
+    margin-top: 4%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    background-color: transparent;
+    border: 1.5px solid #575454;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.course-btn a {
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    /* transition: .5s; */
+}
+
+.course-btn:hover {
+    background-color: #575454;
+}
+
+.course-btn a:hover {
+    color: #ffff;
+}
+
+/* third pannel started */
+
+.question-section {
+    background: linear-gradient(to right, #575454 0%, #030303 100%);
+    height: 30vh;
+    width: 90%;
+    padding: 30px;
+    margin: 40px;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.question-section h1 {
+    color: #fff;
+    border-bottom: 1.5px solid #575454;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.question-section p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.question-section a {
+    color: #fff;
+    text-decoration: none;
+}
